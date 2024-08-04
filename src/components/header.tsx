@@ -135,7 +135,7 @@ export default function Header() {
 
           <div className=" flex items-center pr-6">
             <Image
-              src="/Box.svg"
+              src="/box.svg"
               // className="h-6 w-7"
               width={39}
               height={41.23}

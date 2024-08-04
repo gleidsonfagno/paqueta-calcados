@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img src=".github/logo.png" height="60px" />
+  <img src="/logo.png" height="60px" />
 </h1>
 
 <p align="center">
-  <img src=".github/preview.png" width="100%" />
+  <img src="/preview.png" width="100%" />
 </p>
 
 ## 💻 Projeto
