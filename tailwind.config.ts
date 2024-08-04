@@ -9,9 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        "gradient-yellow": 'linear-gradient(92.46deg, #FF8A29 31.2%, #CF5D00 71.97%)',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
     },
   },

@@ -1,7 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* body *{
+  max-width: 100%;
+  width: 1228px;
+  border: 1px solid red;
+} */
 
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Defina a fonte para o corpo do documento */
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+/*
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +45,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

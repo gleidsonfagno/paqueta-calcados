@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img src=".github/logo.png" height="60px" />
+  <img src="../public/logo.png" height="60px" />
 </h1>
 
 <p align="center">
-  <img src=".github/preview.png" width="100%" />
+  <img src="../public/preview.png" width="100%" />
 </p>
 
 ## 💻 Projeto
@@ -14,8 +14,8 @@ A autora do layout é a design [**Ana Maria Almeida**](https://www.linkedin.com/
 
 ## 🚀 Tecnologias
 
-- [Tailwindcss](https://tailwindcss.com/docs/installation)
-- [Nextjs](https://nextjs.org/)
+- [Item 1](http://localhost:3000/)
+- [Item 2](http://localhost:3000/)
 - [Item 3](http://localhost:3000/)
 
 ## 📝 Requisitos do desafio
