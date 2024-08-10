@@ -1,9 +1,9 @@
 <h1 align="center">
-  <img src="/logo.png" height="60px" />
+  <img src="./public/logo.png" height="60px" />
 </h1>
 
 <p align="center">
-  <img src="/preview.png" width="100%" />
+  <img src="./public/preview.png" width="100%" />
 </p>
 
 ## 💻 Projeto
@@ -26,7 +26,7 @@ A autora do layout é a design [**Ana Maria Almeida**](https://www.linkedin.com/
 
 - [ ]  Usar a propriedade `object-fit: cover` para posicionar a [imagem do banner hero](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=115-57&t=iAA31lEBc7NQJqfs-0).
 
-- [ ]  Criar o efeito gradiente nas imagens Calçados Femininos e Calçados Masculinos com o uso da propriedade `linear-gradient`.
+- [x]  Criar o efeito gradiente nas imagens Calçados Femininos e Calçados Masculinos com o uso da propriedade `linear-gradient`.
 
 - [ ]  As logos da [seção Marcas](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=115-57&t=OT0QzAk3qKoEWrZy-0), deverão estar espaçadas com o uso da propridade `justify-content: space-between`. 
 

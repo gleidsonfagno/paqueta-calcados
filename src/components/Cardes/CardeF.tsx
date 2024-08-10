@@ -1,11 +1,7 @@
-import { ReactNode } from "react";
-
-
 
 type CardeProps = {
     imgUrl: string;
     title: string;
-    
 }
 
 export default function CardeF({imgUrl, title }: CardeProps) {

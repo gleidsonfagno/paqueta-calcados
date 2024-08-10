@@ -4,6 +4,12 @@ import Header from "@/components/header";
 import Image from "next/image";
 import CardeM from "@/components/Cardes/CardeM";
 import CardeF from "@/components/Cardes/CardeF";
+// import CardesProduct from "@/components/Cardes/Product/CardesProduct";
+
+
+import Carrosel from "@/components/Carrosel";
+
+const numbers = Array.from({ length: 12 }, (_, i) => i + 33);
 
 export default function Home() {
   return (
@@ -52,20 +58,44 @@ export default function Home() {
       </section>
 
       <section className="max-w-7xl m-auto">
-        <div className="flex justify-between items-center">
-        <Image
-            src="/logos/paqueta.png"
-            width={398}
-            height={154}
-            alt=""
-          />
+        <div className="flex justify-between items-center mb-[74px]">
+          <Image src="/logos/paqueta.png" width={398} height={154} alt="" />
 
-          <p className="text-[22px] font-normal leading-9 max-w-[588px] text-right">Você também pode escolher o seu novo sapato favorito de acordo com a sua numeração.</p>
+          <p className="text-[22px] font-normal leading-9 max-w-[588px] text-right ">
+            Você também pode escolher o seu novo sapato favorito de acordo com a
+            sua numeração.
+          </p>
         </div>
 
+        {/* <div className="flex justify-between items-center mb-[168px]">
+         {numbers.map((number) => (
+          <div className="flex justify-center items-center border w-[65px] h-[65px] border-solid border-[#383838]" key={number}>
+            <span>{number} </span>
+          </div>
+         ))}
+        </div> */}
       </section>
 
+      <section className="flex flex-col max-w-7xl m-auto">
+        <div className="flex justify-between items-center pb-[43px]">
+          <h2 className="text-[34px] font-semibold leading-[47.6px] text-left text-[#121212]">
+            DESTAQUES
+          </h2>
 
+          <a
+            href=""
+            className="text-lg font-normal leading-[25.2px] text-center text-[#121212] border-b-[#CF5D00] border-b border-solid"
+          >
+            CONFERIR TUDO
+          </a>
+        </div>
+
+        <div className="flex justify-between pb-[46px]">
+        
+        <Carrosel />
+        </div>
+      </section>
+      
     </main>
   );
 }

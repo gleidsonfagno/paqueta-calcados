@@ -1,0 +1,55 @@
+import Button from "@/components/Button";
+import { Heart } from "lucide-react";
+import Image from "next/image";
+
+interface CardesProductProps {
+  image: string;
+  name: string;
+  price: {
+    value: number;
+    discount: number;
+  };
+}
+export default function CardesProduct({
+  image,
+  name,
+  price,
+}: CardesProductProps) {
+
+    // Calcule o preço com desconto, se houver
+  const discountedPrice = price.discount > 0 ? price.value * (1 - price.discount) : price.value;
+
+  return (
+    <div className="flex flex-col justify-center w-[307px] h-[412px] shadow-[0px_4px_21px_0px_#0000001A]">
+      <a href='#' className="flex pr-2">
+            <Heart className="h-6 w-16"/>
+            <span>Lista de desejo</span>
+            
+        </a>
+
+      <div className="flex flex-col justify-between p-[25px]">
+        <Image
+          src={image}
+          width={210}
+          height={149}
+          alt=""
+          className="flex pb-[24px] object-cover w-[100%] max-h-[149px] "
+        />
+        <span className="pb-3 ext-sm font-medium leading-[19.6px] text-left text-[#121212]">
+          {name}
+        </span>
+        <p className="pb-2 text-xl font-bold leading-7 text-left text-[#121212]">
+            R$ {discountedPrice.toFixed(2)}
+        </p>
+        <p className="pb-3 text-xs font-normal leading-[16.8px] text-left text-[#121212]">
+          {/* Você pode formatar o parcelamento aqui se necessário */}
+          OU 9X R$ {Math.round(discountedPrice / 9).toFixed(2)}
+
+        </p>
+        <Button>COMPRAR</Button>
+      </div>
+    </div>
+  );
+}
+
+// https://api.brchallenges.com/api/paqueta/shoes
