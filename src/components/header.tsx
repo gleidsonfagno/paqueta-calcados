@@ -92,8 +92,8 @@ export default function Header() {
       </div>
 
       <div className=" bg-gradient-yellow">
-        <div className=" max-w-7xl flex py-14 items-center justify-between m-auto text-white text-sm font-normal leading-[19.6px]">
-          <div className=" flex items-center pr-6">
+        <div className=" max-w-7xl flex py-14 items-center justify-between m-auto text-white text-sm font-normal leading-[19.6px] gap-6">
+          <div className=" flex items-center ">
             <Image
               src="/CreditCard.svg"
               // className="h-10 w-10"
@@ -107,7 +107,7 @@ export default function Header() {
             </p>
           </div>
 
-          <div className=" flex items-center pr-6">
+          <div className=" flex items-center ">
             <Image
               src="/MapPin.svg"
               // className="h-6 w-7"
@@ -121,7 +121,7 @@ export default function Header() {
             </p>
           </div>
 
-          <div className=" flex items-center pr-6">
+          <div className=" flex items-center ">
             <Image
               src="/BadgePercent.svg"
               // className="h-6 w-7"
@@ -133,7 +133,7 @@ export default function Header() {
             <p className="pl-5">GANHE 20% DE DESCONTO*</p>
           </div>
 
-          <div className=" flex items-center pr-6">
+          <div className=" flex items-center ">
             <Image
               src="/box.svg"
               // className="h-6 w-7"
@@ -146,7 +146,7 @@ export default function Header() {
             </p>
           </div>
 
-          <div className=" flex items-center pr-6">
+          <div className=" flex items-center ">
             <Image
               src="/setas.svg"
               // className="h-6 w-7"

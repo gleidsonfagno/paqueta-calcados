@@ -15,15 +15,15 @@ export default function Home() {
     <main className="">
       <Header />
 
-      <section className="max-w-7xl m-auto pt-[107px] pb-[97px] border-b-[#383838] border-b border-solid">
-        <div className="flex justify-between mb-[110px] ">
+      <section className="max-w-7xl m-auto pt-[107px] pb-[97px] border-b-[#383838] border-b border-solid pl-4 pr-4">
+        <div className="flex flex-col xl:flex-row xl:items-center justify-between mb-[110px] ">
           <CardeF
             imgUrl="/calcados-femininos.png"
             title="CALÇADOS
               FEMININOS"
           />
 
-          <div className="flex flex-col text-left items-end justify-center w-[628px]">
+          <div className="flex flex-col text-left items-end justify-center md:w-[628px] ">
             <p className="font-montserrat text-[22px] font-normal leading-9 text-right mb-[54px]">
               Escolher o seu sapato favorito entre nossa{" "}
               <strong className=" font-semibold ">
@@ -35,13 +35,13 @@ export default function Home() {
             <Button>CONFERIR</Button>
           </div>
         </div>
-        <div className="flex flex-row-reverse justify-between">
+        <div className="flex flex-col  xl:flex-row-reverse justify-between">
           <CardeM
             imgUrl="/calcados-masculinos.png"
             title="CALÇADOS MASCULINO"
           />
 
-          <div className="flex flex-col items-start justify-center w-[517px] ">
+          <div className="flex flex-col items-start justify-center md:w-[517px] ">
             <p className="font-montserrat text-[22px] font-normal leading-9 text-left mb-[54px]">
               Escolher o seu sapato favorito entre nossa{" "}
               <strong className=" font-semibold ">
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl m-auto">
+      <section className="max-w-7xl m-auto pl-4 pr-4" >
         <div className="flex justify-between items-center mb-[74px]">
           <Image src="/logos/paqueta.png" width={398} height={154} alt="" />
 
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col max-w-7xl m-auto">
+      <section className="flex flex-col max-w-7xl m-auto pl-4 pr-4">
         <div className="flex justify-between items-center pb-[43px]">
           <h2 className="text-[34px] font-semibold leading-[47.6px] text-left text-[#121212]">
             DESTAQUES
@@ -87,7 +87,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="flex justify-between pb-[46px]">
+        <div className="flex justify-between items-center pb-[46px]">
         
         <Carrosel />
         </div>

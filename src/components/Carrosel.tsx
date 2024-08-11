@@ -30,11 +30,22 @@ export default function Carrosel() {
 
     return (
     <Swiper
-      slidesPerView={4}
+      // slidesPerView={4}
       spaceBetween={30}
       pagination={{ clickable: true }}
       modules={[Pagination]}
       className="mySwiper"
+      breakpoints={{
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+        }
+      }}
     >
       {products.map((product) => (
         <SwiperSlide key={product.id}>
