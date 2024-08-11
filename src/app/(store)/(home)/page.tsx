@@ -35,7 +35,6 @@ export default function Home() {
             <Button>CONFERIR</Button>
           </div>
         </div>
-
         <div className="flex flex-row-reverse justify-between">
           <CardeM
             imgUrl="/calcados-masculinos.png"
@@ -65,7 +64,6 @@ export default function Home() {
             sua numeração.
           </p>
         </div>
-
         <div className="flex justify-between items-center mb-[168px]">
          {numbers.map((number) => (
           <div className="flex justify-center items-center border w-[65px] h-[65px] border-solid border-[#383838]" key={number}>
