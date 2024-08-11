@@ -20,7 +20,6 @@ export default function Carrosel() {
                 const response = await fetch("https://api.brchallenges.com/api/paqueta/shoes")
                 const data = await response.json()
                 setProducts(data)
-                console.log(data)
             } catch  (error) {
                 console.error('Erro ao buscar produtos:', error);
             }
