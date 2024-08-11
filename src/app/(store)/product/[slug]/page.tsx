@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Facebook, Heart, Instagram, Twitter, Youtube } from "lucide-react";
+
 interface ProductDetailsProps {
   params: {
     slug: string; // Recebe o slug do produto
@@ -16,7 +17,7 @@ interface ProductDetailsProps {
   };
 }
 
-export default function ProductDetails({ params }: ProductDetailsProps) {
+export default function ProductDetails({ params }: {params : { slug: string }} ) {
   const numbers = Array.from({ length: 10 }, (_, i) => i + 33);
 
   const [product, setProduct] = useState<any>(null);
@@ -47,9 +48,11 @@ export default function ProductDetails({ params }: ProductDetailsProps) {
   }, [params.slug]);
 
   if (!product) {
-    <div>
-      Carregando...
-    </div>
+    return (
+      <div>
+        Carregando...
+      </div>
+    );
   }
 
   const discountedPrice =
