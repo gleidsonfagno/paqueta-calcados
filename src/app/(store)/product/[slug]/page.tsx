@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Header from "@/components/header";
 import { Facebook, Heart, Instagram, Twitter, Youtube } from "lucide-react";
-import Carregando from "@/components/Carregando";
+import { FaSpinner } from "react-icons/fa";
 
 interface ProductDetailsProps {
   params: {
@@ -50,7 +49,10 @@ export default function ProductDetails({ params }: ProductDetailsProps) {
   }, [params.slug]);
 
   if (!product) {
-    return <Carregando />;
+    <div className="flex items-center justify-center mt-[90px]">
+      <FaSpinner className="animate-spin h-5 w-5 mr-3 text-blue-500" />
+      Carregando...
+    </div>
   }
 
   const discountedPrice =
