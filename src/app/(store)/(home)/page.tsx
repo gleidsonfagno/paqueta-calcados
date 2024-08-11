@@ -5,8 +5,8 @@ import CardeM from "@/components/Cardes/CardeM";
 import CardeF from "@/components/Cardes/CardeF";
 // import CardesProduct from "@/components/Cardes/Product/CardesProduct";
 
-
 import Carrosel from "@/components/Carrosel";
+import { FaEnvelope, FaUser } from "react-icons/fa";
 
 const numbers = Array.from({ length: 12 }, (_, i) => i + 33);
 
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl m-auto pl-4 pr-4" >
+      <section className="max-w-7xl m-auto pl-4 pr-4">
         <div className="flex justify-between items-center mb-[74px]">
           <Image src="/logos/paqueta.png" width={398} height={154} alt="" />
 
@@ -65,11 +65,14 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-between items-center mb-[168px]">
-         {numbers.map((number) => (
-          <div className="flex justify-center items-center border w-[65px] h-[65px] border-solid border-[#383838]" key={number}>
-            <span>{number} </span>
-          </div>
-         ))}
+          {numbers.map((number) => (
+            <div
+              className="flex justify-center items-center border w-[65px] h-[65px] border-solid border-[#383838]"
+              key={number}
+            >
+              <span>{number} </span>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -88,27 +91,117 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between items-center pb-[46px]">
-        
-        <Carrosel />
+          <Carrosel />
         </div>
       </section>
-      
+
       <section className="flex flex-col gap-[80px] max-w-7xl m-auto pt-[168px] pb-[202px]">
-        <h2 className="text-[34px] font-semibold leading-[47.6px] text-lef">AS MELHORES MARCAS ESTÃO AQUI!</h2>
+        <h2 className="text-[34px] font-semibold leading-[47.6px] text-lef">
+          AS MELHORES MARCAS ESTÃO AQUI!
+        </h2>
 
         <div className="flex gap-12 justify-between items-end">
           <span>
-          <Image src="/logos/adidas.png" width={127} height={86} alt="" />
+            <Image src="/logos/adidas.png" width={127} height={86} alt="" />
           </span>
           <span>
-          <Image src="/logos/via-marte.png" width={275} height={35} alt="" />
+            <Image src="/logos/via-marte.png" width={275} height={35} alt="" />
           </span>
           <span>
-          <Image src="/logos/bebece.png" width={212} height={57} alt="" />
+            <Image src="/logos/bebece.png" width={212} height={57} alt="" />
           </span>
           <span>
-          <Image src="/logos/dumond.png" width={231} height={46} alt="" />
+            <Image src="/logos/dumond.png" width={231} height={46} alt="" />
           </span>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-r from-orange-500 to-yellow-300  ">
+        <div className="max-w-7xl m-auto flex flex-row justify-between items-center gap-8">
+          <div className="flex  ">
+            <h2 className="text-[34px] font-bold leading-[47.6px] text-white">
+              SEJA O PRIMEIRO A RECEBER NOSSAS OFERTAS E NOVIDADES EXCLUSIVAS!
+            </h2>
+            <div>
+            <Image src="/footer.png" width={398} height={154} alt="" />
+            </div>
+          </div>
+
+          
+
+          <div className=" max-w-[650px] pt-[57px] pb-[74px] flex flex-col ">
+            <p className="text-xl font-medium leading-7 text-white mb-[40px]">
+              Nos informe o seu e-mail e nome para o melhor atendimento!
+            </p>
+            <form
+              action=""
+              className="w-[650px] max-w-[650px] flex flex-row justify-between gap-7 mb-[24px]"
+            >
+              <div className="flex items-center mb-4 border-white  max-w-[300px] order-b-[white] border-b border-solid border-0">
+                <FaEnvelope className="mr-2 text-white" />
+                {/* <label htmlFor="email" className="sr-only">
+                  E-mail
+                </label> */}
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="maria@seuemail.com"
+                  className="placeholder-white bg-transparent text-white w-[300px]  max-w-[300px]"
+                />
+              </div>
+              <div className="flex items-center mb-4 border-white  max-w-[300px] order-b-[white] border-b border-solid border-0">
+                <FaUser className="mr-2 text-white" />
+                {/* <label htmlFor="name" className="sr-only">
+                  Nome
+                </label> */}
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Maria da Silva"
+                  className="placeholder-white bg-transparent text-white w-[300px] max-w-[300px]"
+                />
+              </div>
+            </form>
+            <div className="flex flex-row text-white items-center justify-between  mb-[40px]">
+              <p className="text-lg font-medium leading-[25.2px] text-left">
+                Tenho interesse na categoria:
+              </p>
+
+              <div className="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  name="Masculino"
+                  id="masculino"
+                  className="w-[21px] h-[21px]"
+                />
+                <label
+                  htmlFor="masculino"
+                  className="text-lg font-normal leading-[25.2px]"
+                >
+                  Masculino
+                </label>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  name="Feminina"
+                  id="feminina"
+                  className="w-[21px] h-[21px] bg-white focus:outline-none"
+                />
+                <label
+                  htmlFor="feminina"
+                  className="text-lg font-normal leading-[25.2px]"
+                >
+                  Feminina
+                </label>
+              </div>
+            </div>
+
+            <Button>Quero Receber</Button>
+          </div>
         </div>
       </section>
     </main>

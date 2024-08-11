@@ -67,6 +67,14 @@
   }
   .swiper-pagination-bullet:nth-child(n+25) {
     display: none;
-    
+       
 }
 
+/* input {
+  color: aliceblue;
+  border-bottom: 1px solid white;
+  width: 300px;
+  max-width: 300px;
+  outline: none;
+  border: 0;
+} */

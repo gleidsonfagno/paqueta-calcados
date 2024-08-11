@@ -22,26 +22,25 @@ A autora do layout é a design [**Ana Maria Almeida**](https://www.linkedin.com/
 
 ### Nível Fácil
 
-- [ ]  Criar todas a seções da [Homepage(versão simples)](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=105-38&t=r9LrrJRYu6XI8cnW-0).
+- [x]  Criar todas a seções da [Homepage(versão simples)](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=105-38&t=r9LrrJRYu6XI8cnW-0).
 
-- [ ]  Usar a propriedade `object-fit: cover` para posicionar a [imagem do banner hero](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=115-57&t=iAA31lEBc7NQJqfs-0).
+- [x]  Usar a propriedade `object-fit: cover` para posicionar a [imagem do banner hero](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=115-57&t=iAA31lEBc7NQJqfs-0).
 
 - [x]  Criar o efeito gradiente nas imagens Calçados Femininos e Calçados Masculinos com o uso da propriedade `linear-gradient`.
 
-- [ ]  As logos da [seção Marcas](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=115-57&t=OT0QzAk3qKoEWrZy-0), deverão estar espaçadas com o uso da propridade `justify-content: space-between`. 
+- [x]  As logos da [seção Marcas](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=115-57&t=OT0QzAk3qKoEWrZy-0), deverão estar espaçadas com o uso da propridade `justify-content: space-between`. 
 
 ### Nível Médio
-### 
 
-- [ ]  Todos os requisitos do nível fácil.
+- [x]  Todos os requisitos do nível fácil.
 
 - [ ]  Criar todas a seções da [Homepage(versão completa)](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=103-679&t=KjhTrIQyjw2wYAmO-0).
 
-- [ ]  Todos os produtos devem ser listado de forma dinâmica atráves do endpoint [/shoes](https://api.brchallenges.com/api/paqueta/shoes) da API.
+- [x]  Todos os produtos devem ser listado de forma dinâmica atráves do endpoint [/shoes](https://api.brchallenges.com/api/paqueta/shoes) da API.
 
 - [ ]  No card do produto deverá conter a [flag produto esgotado](https://www.figma.com/file/df5XIaBPlnvzkMNUxhLFpq/Paqueta---BrChallenges?type=design&node-id=103-679&t=iAA31lEBc7NQJqfs-0) caso a propriedade **soldout** seja igual a true.
 
-- [ ]  Criar um carrousel para navegar na listagem dos produtos, por padrão será mostrado quatro produtos.
+- [x]  Criar um carrousel para navegar na listagem dos produtos, por padrão será mostrado quatro produtos.
 
 - [ ]  Criar efeito de `hover` ao passar o mouse por cima do botão Comprar, localizado no card do produto.
 
