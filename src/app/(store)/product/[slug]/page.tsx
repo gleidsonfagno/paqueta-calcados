@@ -70,7 +70,7 @@ export default function ProductDetails({
     <section className="max-w-7xl m-auto pb-[100px] border-b-[#383838] border-b border-solid">
       <span>Paqueta</span>
 
-      <div className="flex justify-between gap-[76px] mb-[81px]">
+      <div className="flex justify-between  mb-[81px]">
         <div className="max-w-[703.41px] w-[100%] max-h-[521.18px] h-[100%]">
           <Image
             src={product.image}
@@ -111,10 +111,10 @@ export default function ProductDetails({
 
           <div className="flex flex-col">
             <p className="text-lg font-normal leading-[25.2px] pb-5 text-[#383838]">Escolha a numeração:</p>
-            <div className="flex justify-between items-center mb-7">
+            <div className="flex justify-between items-center mb-7 gap-[33px] flex-wrap">
               {numbers.map((number) => (
                 <div
-                  className="flex justify-center items-center border w-[65px] h-[65px] border-solid border-[#383838]"
+                  className="flex justify-center items-center border  w-[65px] h-[65px] border-solid border-[#383838]"
                   key={number}
                 >
                   <span>{number} </span>
@@ -147,7 +147,7 @@ export default function ProductDetails({
           </div>
         </div>
 
-        <button className="w-[100%] max-w-[547px] h-[46px] gap-0 left-[1269px] top-[684px] bg-gradient-to-r from-orange-500 to-yellow-300 text-lg font-normal leading-[19.8px] text-center text-white">Comprar</button>
+        <button className="w-[100%] max-w-[547px] h-[46px] gap-0 left-[1269px] top-[684px] bg-gradient-to-r from-orange-500 to-yellow-300 text-lg font-normal leading-[19.8px] text-center text-white hover:bg-orange-600 hover:bg-none">Comprar</button>
       </div>
 
       <article>
